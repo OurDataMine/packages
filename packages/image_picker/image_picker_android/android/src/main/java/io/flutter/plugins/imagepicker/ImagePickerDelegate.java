@@ -441,7 +441,7 @@ public class ImagePickerDelegate
   }
 
   private void launchTakeImageWithCameraIntent() {
-    Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+    Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE_SECURE);
     if (cameraDevice == CameraDevice.FRONT) {
       useFrontCamera(intent);
     }
